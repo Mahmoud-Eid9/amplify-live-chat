@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "livechat",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authlivechatbfc7cd92",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-livechat-dev-15225-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/425e76be6054d442bed965218a303a11bd8441f8"
+}
